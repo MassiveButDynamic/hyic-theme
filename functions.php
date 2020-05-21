@@ -1,4 +1,6 @@
 <?php
+    include('functions/customizer.php');
+
     if(!function_exists('hyic_setup')) :
 
         function hyic_setup() {

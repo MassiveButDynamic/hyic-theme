@@ -13,5 +13,5 @@
 
     endif; 
     add_action( 'after_setup_theme', 'hyic_setup' );    
-
+    add_theme_support( 'customize-selective-refresh-widgets' );
 ?>

@@ -1,2 +1,4 @@
-<h2>Wir</h2>
-<p>Wir sind eine Gruppe aus Jugendlichen, die bei Hammerbrooklyn die junge Generation vertreten und Innovation aus einem anderen Blickwinkel schaffen wollen.</p>
+<section id='wir'>
+    <h2 class='heading' id='wirheader'><?php echo get_theme_mod('wir_homepage_heading'); ?></h2>
+    <p><?php echo get_theme_mod('wir_homepage_text'); ?></p>
+</section>

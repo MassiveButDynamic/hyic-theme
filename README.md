@@ -1,2 +1,2 @@
 # HYIC Wordpress Theme
-#hoffentlich wirds eine super website!
+#Hoffentlich wirds eine super Website!

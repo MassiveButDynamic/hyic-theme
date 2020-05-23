@@ -15,4 +15,6 @@
     add_action( 'after_setup_theme', 'hyic_setup' );    
     add_theme_support( 'customize-selective-refresh-widgets' );
     add_theme_support('post-thumbnails');
+
+    wp_enqueue_style( 'projects', get_template_directory_uri().'/css/projects.css' )
 ?>

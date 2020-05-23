@@ -1,5 +1,12 @@
+#projects {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
 #projects a {
     text-decoration: none;
+    margin: 5px;
 }
 
 #projects .project {

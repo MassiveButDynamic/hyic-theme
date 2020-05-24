@@ -23,7 +23,7 @@ $loop = new WP_Query($args);
             <div class='image'><?php the_post_thumbnail(); ?></div>
             <div class='text' style='background-color: <?php echo get_post_custom_values('_hyic_project_tile_color', get_the_ID())[0];?>'>
                 <h2><?php the_title(); ?></h2>
-                <div class='description'><?php the_content(); ?></div>
+                <div class='description'><?php the_excerpt(); ?></div>
             </div>
         </a>
         <?php

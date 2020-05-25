@@ -93,7 +93,8 @@
                 'section' => 'order',
                 'sections'=>array(
                     array('id'=>'wir', 'label'=>'Wir'), 
-                    array('id'=>'test', 'label'=>'Testlabel')    
+                    array('id'=>'test', 'label'=>'Testlabel'),
+                    array('id'=>'partner', 'label'=>'Partner')  
                 )
               )
             )

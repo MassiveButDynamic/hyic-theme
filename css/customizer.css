@@ -1,0 +1,17 @@
+ul#homepage_sections_order.sortable {
+    padding: 10px;
+    background: white;
+}
+
+ul#homepage_sections_order.sortable li.item {
+    background: #f1f1f1;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    cursor: all-scroll;
+    border: 1px solid #e9e9e9;
+}
+
+ul#homepage_sections_order.sortable li.item:hover {
+    border: 1px solid #a9a9a9;
+}

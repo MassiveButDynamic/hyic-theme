@@ -8,11 +8,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: deploy file
-        uses: wlixcc/SFTP-Deploy-Action@v1.0
+        uses: wangyucode/sftp-upload-action@v1.1
         with:
           username: 'u100563475-julian'
-          server: 'access823494593.webspace-data.io'
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }} 
-          local_path: './'
-          remote_path: '/wordpress/wp-content/themes/hyic-theme'
-          args: '-o ConnectTimeout=5'
+          host: 'access823494593.webspace-data.io'
+          password: ${{ secrets.SSH_PRIVATE_KEY }} 
+          localDir: './'
+          remoteDir: '/wordpress/wp-content/themes/hyic-theme'

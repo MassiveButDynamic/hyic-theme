@@ -1,6 +1,4 @@
 <?php
-    include('functions/customizer.php');
-
     if(!function_exists('hyic_setup')) :
 
         function hyic_setup() {
@@ -16,9 +14,9 @@
     add_theme_support('customize-selective-refresh-widgets');
     add_theme_support('post-thumbnails');
 
-    wp_enqueue_style('projects', get_template_directory_uri().'/css/projects.css');
-    wp_enqueue_style('customizer', get_template_directory_uri().'/css/customizer.css');
+    //wp_enqueue_style('projects', get_template_directory_uri().'/css/projects.css');
+    //wp_enqueue_style('customizer', get_template_directory_uri().'/css/customizer.css');
 
-    wp_enqueue_script('jquery');
-    wp_enqueue_script('html5sortable', get_template_directory_uri().'/js/jquery.sortable.min.js')
+    //wp_enqueue_script('jquery');
+    //wp_enqueue_script('html5sortable', get_template_directory_uri().'/js/jquery.sortable.min.js')
 ?>

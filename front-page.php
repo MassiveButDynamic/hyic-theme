@@ -1,14 +1,14 @@
-<?php get_header(); 
-$sections = explode(',', get_theme_mod('homepage_sections_order'));
+<?php 
+get_header(); 
 ?>
 Das hier ist die Homepage.<br>
 
 <?php 
-foreach($sections as $section) {
-    $located = locate_template( 'template-parts/homepage-sections/'.$section.'.php' );
-    if ( !empty( $located ) ) {
-        get_template_part('template-parts/homepage-sections/'.$section);
-    }
-}
- ?>
+if ( have_posts() ) {
+	while ( have_posts() ) {
+        the_post();
+        the_content();
+	} // end while
+} // end if
+?>
 <?php get_footer(); ?>

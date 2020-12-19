@@ -21,12 +21,3 @@ Hier werden alle Sachen registriert, die man dann im Customizer von Wordpress ei
 
 ### front-page.php
 Die Homepage.
-
-### template-parts/homepage-section/{irgendeine Datei}.php
-In dem Ordner hat jede Sektion, die auf der Homepage ist, eine eigene Datei.
-
-### page-projects.php
-Die Seite für die Projektübersicht. Kann für eine angelegte Page als Template mit dem Namen "Projektübersicht" eingestellt werden.
-
-### single-hyic_project.php
-Die Seite für einzelne Projekte.

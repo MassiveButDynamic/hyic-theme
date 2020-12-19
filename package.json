@@ -1,0 +1,26 @@
+{
+  "name": "hyic-theme",
+  "version": "1.0.0",
+  "description": "Notwendige Dateien, damit Wordpress das Theme erkennt. Sonst nicht so richtig wichtig.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run scss-watch",
+    "build": "npm run scss-compile",
+    "scss-compile": "sass css --no-source-map",
+    "scss-watch": "sass css --watch --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moritz157/hyic-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moritz157/hyic-theme/issues"
+  },
+  "homepage": "https://github.com/moritz157/hyic-theme#readme",
+  "devDependencies": {
+    "sass": "^1.30.0"
+  }
+}

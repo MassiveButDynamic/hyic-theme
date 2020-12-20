@@ -1,0 +1,74 @@
+#top-section {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primary);
+}
+#top-section .background {
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+}
+#top-section .text {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#top-section .text .top {
+  display: block;
+  padding-left: 75px;
+  padding-top: 75px;
+  padding-right: 75px;
+}
+#top-section .text .top img {
+  width: 225px;
+  max-width: 100%;
+}
+#top-section .text .top h1 {
+  color: white;
+  font-size: 7rem;
+  font-weight: 300;
+  max-width: 1px;
+  margin-top: 0;
+}
+#top-section .text .bottom {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 3em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#top-section .text .bottom .menu ul {
+  list-style-type: none;
+  text-align: right;
+}
+#top-section .text .bottom .menu ul li a {
+  color: black !important;
+  text-decoration: none;
+  font-size: 2.5rem;
+  text-align: right;
+}
+#top-section .text .bottom .menu ul li a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+  #top-section .background {
+    height: calc(100% - (1000px - 100vw) / 1.5);
+    top: calc((1000px - 100vw) / 1.5);
+    overflow: hidden;
+    direction: rtl;
+  }
+  #top-section .background svg {
+    width: 1000px;
+  }
+  #top-section .text .top h1 {
+    font-size: 10vw;
+  }
+}

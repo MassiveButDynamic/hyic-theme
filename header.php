@@ -8,5 +8,5 @@
     </head>
     <body>
         <nav>
-            <?php wp_nav_menu(array('menu'=>'top'))?>
+            <?php if(!is_front_page()) { wp_nav_menu(array('menu'=>'top')); }?>
         </nav>

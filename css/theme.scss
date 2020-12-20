@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Manrope';
-    src: url('/assets/fonts/Manrope[wght].ttf') format("truetype-variations");
+    src: url('/wp-content/themes/hyic-theme/assets/fonts/Manrope[wght].ttf') format("truetype-variations");
 }
 
 :root {
@@ -9,4 +9,5 @@
 
 body {
     font-family: 'Manrope', sans-serif;
+    margin: 0;
 }

@@ -44,17 +44,17 @@
   bottom: 0;
   right: 0;
 }
-#top-section .text .bottom .menu ul {
+#top-section .text .bottom ul {
   list-style-type: none;
   text-align: right;
 }
-#top-section .text .bottom .menu ul li a {
+#top-section .text .bottom ul li a {
   color: black !important;
   text-decoration: none;
   font-size: 2.5rem;
   text-align: right;
 }
-#top-section .text .bottom .menu ul li a:hover {
+#top-section .text .bottom ul li a:hover {
   text-decoration: underline;
 }
 

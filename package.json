@@ -6,9 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run scss-watch",
-    "build": "npm run scss-compile",
+    "build": "npm run lint && npm run scss-compile",
     "scss-compile": "sass css --no-source-map",
-    "scss-watch": "sass css --watch --no-source-map"
+    "scss-watch": "sass css --watch --no-source-map",
+    "lint": "stylelint ./css/*.scss"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,11 @@
   },
   "homepage": "https://github.com/moritz157/hyic-theme#readme",
   "devDependencies": {
-    "sass": "^1.30.0"
+    "sass": "^1.30.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "dependencies": {
+    "stylelint-scss": "^3.18.0"
   }
 }

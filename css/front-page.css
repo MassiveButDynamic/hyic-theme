@@ -58,6 +58,22 @@
   text-decoration: underline;
 }
 
+#main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main-wrapper main {
+  width: 1000px;
+  max-width: calc(100% - 40px);
+}
+#main-wrapper main h2 {
+  font-size: 3.25rem;
+  font-weight: 500;
+  margin-top: 2em;
+  margin-bottom: 0.75em;
+}
+
 @media screen and (max-width: 1000px) {
   #top-section .background {
     height: calc(100% - (1000px - 100vw) / 1.5);

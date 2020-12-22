@@ -69,12 +69,31 @@
 .hyic-event-carousel-wrapper .hyic-event-card:hover {
   box-shadow: 0 0 20px 0 #00000045;
 }
+.hyic-event-carousel-wrapper .show-all-hyic-events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5em;
+  margin: 5px 10px;
+}
+.hyic-event-carousel-wrapper .show-all-hyic-events .button {
+  border: 1px solid #5d5c5c;
+  color: #5d5c5c;
+  padding: 0.5em 2.5em;
+  border-radius: 5em;
+  text-align: center;
+  text-decoration: none;
+}
 
 @media screen and (max-width: 730px) {
   .hyic-event-carousel-wrapper {
     flex-wrap: wrap;
   }
   .hyic-event-carousel-wrapper .hyic-event-card {
+    width: calc(50% - 20px);
+  }
+  .hyic-event-carousel-wrapper .show-all-hyic-events {
+    padding: 0;
     width: calc(50% - 20px);
   }
 }
@@ -86,5 +105,9 @@
     width: calc(100% - 20px);
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  .hyic-event-carousel-wrapper .show-all-hyic-events {
+    padding: 5em 0;
+    width: calc(100% - 20px);
   }
 }

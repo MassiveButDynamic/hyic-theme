@@ -69,3 +69,22 @@
 .hyic-event-carousel-wrapper .hyic-event-card:hover {
   box-shadow: 0 0 20px 0 #00000045;
 }
+
+@media screen and (max-width: 730px) {
+  .hyic-event-carousel-wrapper {
+    flex-wrap: wrap;
+  }
+  .hyic-event-carousel-wrapper .hyic-event-card {
+    width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .hyic-event-carousel-wrapper {
+    flex-direction: column;
+  }
+  .hyic-event-carousel-wrapper .hyic-event-card {
+    width: calc(100% - 20px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

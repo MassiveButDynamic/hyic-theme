@@ -9,9 +9,10 @@
   margin-bottom: 5px;
   margin-left: 10px;
   margin-right: 10px;
-  height: 20em;
-  width: 13em;
+  height: 25em;
+  width: 15em;
   box-shadow: 0 0 20px 0 #00000024;
+  transition: box-shadow 0.2s;
 }
 .hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-image-wrapper {
   height: 50%;
@@ -21,15 +22,37 @@
   justify-content: center;
 }
 .hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-image-wrapper img {
-  min-height: 100%;
-  min-width: 100%;
+  width: 100%;
 }
 .hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-text-wrapper {
   width: calc(100% - 20px);
   height: 35%;
-  padding: 10px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
+}
+.hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-text-wrapper .hyic-event-card-title {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+.hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-text-wrapper .hyic-event-card-time {
+  font-weight: 600;
+  font-size: 0.95em;
+  color: #5d5c5c;
+  margin-top: 0.35em;
+}
+.hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-text-wrapper .hyic-event-card-deadline {
+  margin-top: 0.35em;
+}
+.hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-text-wrapper .hyic-event-card-deadline span:not(.date) {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #5d5c5c;
+}
+.hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-text-wrapper .hyic-event-card-deadline span.date {
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #5d5c5c;
 }
 .hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-button {
   width: 100%;
@@ -42,4 +65,7 @@
   justify-content: center;
   color: white;
   text-decoration: none;
+}
+.hyic-event-carousel-wrapper .hyic-event-card:hover {
+  box-shadow: 0 0 20px 0 #00000045;
 }

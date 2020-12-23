@@ -82,8 +82,30 @@
             margin-top: 2em;
             margin-bottom: 0.75em;
         }
+
+        p {
+            line-height: 1.5em;
+        }
+
+        .podcast {
+            div.wp-block-media-text__content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+
+                p {
+                    margin-top: 0;
+                }
+
+                figure {
+                    margin: 0;
+                }
+            }
+        }
     }
 }
+
 
 @media screen and (max-width: 1000px) {
     #top-section {
@@ -100,6 +122,16 @@
 
         .text .top h1 {
             font-size: 10vw;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #main-wrapper main .podcast div.wp-block-media-text__content {
+        padding: 0;
+
+        p {
+            margin: 2em 0;
         }
     }
 }

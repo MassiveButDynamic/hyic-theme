@@ -107,7 +107,8 @@ nav.show-on-scroll.visible {
     nav {
         justify-content: space-between;
 
-        div.menu {
+        div.menu,
+        div.menu-top-container {
             display: none;
         }
 

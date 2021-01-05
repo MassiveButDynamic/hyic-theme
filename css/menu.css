@@ -93,7 +93,8 @@ nav.show-on-scroll.visible {
   nav {
     justify-content: space-between;
   }
-  nav div.menu {
+  nav div.menu,
+nav div.menu-top-container {
     display: none;
   }
   nav .hamburger {

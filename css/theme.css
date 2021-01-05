@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Manrope";
-  src: url("/wp-content/themes/hyic-theme/assets/fonts/Manrope[wght].ttf") format("truetype-variations");
+  src: url("../assets/fonts/Manrope[wght].ttf") format("truetype-variations");
 }
 :root {
   --primary: #36e3a1;

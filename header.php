@@ -7,6 +7,7 @@
         <?php wp_head() ?>
     </head>
     <body>
-        <nav>
-            <?php if(!is_front_page()) { wp_nav_menu(array('menu'=>'top')); }?>
+        <nav class='<?php if(is_front_page()) { echo('show-on-scroll'); }?>'>
+            <a href='<?php echo get_home_url(); ?>'><img class='logo' src='<?php echo esc_url(get_theme_mod('menu_logo')); ?>'></a>
+            <?php wp_nav_menu(array('menu'=>'top')) ?>
         </nav>

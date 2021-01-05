@@ -1,6 +1,6 @@
 <?php
     include('customizer.php');
-    
+
     if(!function_exists('hyic_setup')) :
 
         function hyic_setup() {
@@ -27,6 +27,8 @@
     wp_enqueue_style('hyic-event-carousel', get_template_directory_uri().'/css/hyic-event-carousel.css');
     wp_enqueue_style('menu', get_template_directory_uri().'/css/menu.css');
     
+    wp_enqueue_script('menu', get_template_directory_uri().'/js/menu.js');
+
     //wp_enqueue_style('customizer', get_template_directory_uri().'/css/customizer.css');
 
     //wp_enqueue_script('jquery');

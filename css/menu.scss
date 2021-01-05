@@ -5,6 +5,7 @@ nav {
     align-items: center;
     background-color: var(--primary);
     box-shadow: 0 0 10px 0 #00000026;
+    z-index: 100;
 
     img.logo {
         height: 2.85em;
@@ -42,5 +43,11 @@ nav {
 }
 
 nav.show-on-scroll {
-    display: none;
+    position: fixed;
+    top: -4.35em;
+    transition: top 0.15s ease-out;
+}
+
+nav.show-on-scroll.visible {
+    top: 0;
 }

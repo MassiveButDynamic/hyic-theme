@@ -7,6 +7,14 @@
         <?php wp_head() ?>
     </head>
     <body>
-        <nav>
-            <?php if(!is_front_page()) { wp_nav_menu(array('menu'=>'top')); }?>
+        <nav class='<?php if(is_front_page()) { echo('show-on-scroll'); }?>'>
+            <a href='<?php echo get_home_url(); ?>'><img class='logo' src='<?php echo esc_url(get_theme_mod('menu_logo')); ?>'></a>
+            <?php wp_nav_menu(array('menu'=>'top')) ?>
+            <div class='hamburger' onclick='toggleMobileNav()'><img src='<?php echo get_template_directory_uri(); ?>/assets/menu-24px.svg'></div>
         </nav>
+        <div id='mobilenav-wrapper'>
+            <?php wp_nav_menu(array('menu'=>'top')) ?>
+        </div>
+        <?php if(!is_front_page()){?>
+            <div class='navbar-spacer'></div>
+        <?php }?>

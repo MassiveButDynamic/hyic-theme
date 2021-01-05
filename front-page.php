@@ -17,13 +17,16 @@ get_header();
                 </div>
         </div>
 </div>
-
-<?php 
-if ( have_posts() ) {
-	while ( have_posts() ) {
-        the_post();
-        the_content();
-	} // end while
-} // end if
-?>
+<div id='main-wrapper'>      
+        <main>
+                <?php 
+                if ( have_posts() ) {
+                        while ( have_posts() ) {
+                        the_post();
+                        the_content();
+                        } // end while
+                } // end if
+                ?>
+        <main>
+</div>
 <?php get_footer(); ?>

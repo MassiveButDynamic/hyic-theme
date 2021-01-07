@@ -1,0 +1,98 @@
+#main-wrapper.news main ul {
+  list-style-type: none;
+  padding: 0;
+}
+#main-wrapper.news main ul li {
+  display: flex;
+  margin-bottom: 3.5em;
+}
+#main-wrapper.news main ul li .image-wrapper {
+  max-width: 200px;
+  margin-right: 1.5em;
+}
+#main-wrapper.news main ul li .image-wrapper img {
+  height: auto;
+  width: 100%;
+}
+#main-wrapper.news main ul li .text-wrapper a.title {
+  font-size: 2.5rem;
+  font-variation-settings: "wght" 550;
+  text-decoration: none;
+  color: black;
+}
+#main-wrapper.news main ul li .text-wrapper div.date {
+  margin-top: 0.35em;
+  color: #565656;
+  font-variation-settings: "wght" 545;
+}
+#main-wrapper.news main ul li a.read-more {
+  color: black;
+  text-decoration: none;
+  background-color: var(--primary);
+  padding: 10px 30px;
+}
+#main-wrapper.news main ul li a.read-more-mobile-button {
+  display: none;
+  color: black;
+  text-decoration: none;
+  background-color: var(--primary);
+  padding: 15px 30px;
+}
+
+#main-wrapper.front-page main ul {
+  padding: 0;
+}
+#main-wrapper.front-page main ul li {
+  display: grid;
+  margin-bottom: 3.5em;
+  grid-template-columns: 150px 25px auto;
+  grid-template-areas: "img spacer text1" "img spacer text2" "img spacer text3";
+}
+#main-wrapper.front-page main ul li div.wp-block-latest-posts__featured-image {
+  grid-area: img;
+}
+#main-wrapper.front-page main ul li a {
+  grid-area: text1;
+  font-size: 2rem;
+  font-variation-settings: "wght" 550;
+  text-decoration: none;
+  color: black;
+}
+#main-wrapper.front-page main ul li time {
+  grid-area: text2;
+  font-size: 1em;
+  margin-top: 0.35em;
+  color: #565656;
+  font-variation-settings: "wght" 545;
+}
+#main-wrapper.front-page main ul li div.wp-block-latest-posts__post-excerpt {
+  grid-area: text3;
+}
+
+@media screen and (max-width: 730px) {
+  #main-wrapper.news main h1 {
+    margin-top: 0.67em;
+  }
+  #main-wrapper.news main ul li {
+    flex-direction: column;
+  }
+  #main-wrapper.news main ul li .image-wrapper {
+    max-width: 100%;
+    max-height: 40vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+  #main-wrapper.news main ul li .text-wrapper a.read-more {
+    display: none;
+  }
+  #main-wrapper.news main ul li .text-wrapper a.read-more-mobile-button {
+    display: block;
+  }
+  #main-wrapper.news main ul li .text-wrapper a.read-more-mobile-button div {
+    width: 100%;
+    text-align: center;
+  }
+}

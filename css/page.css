@@ -1,0 +1,18 @@
+#main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main-wrapper main {
+  width: 1000px;
+  max-width: calc(100% - 40px);
+}
+#main-wrapper main h1 {
+  font-size: 3.25rem;
+  font-weight: 500;
+  margin-top: 2em;
+  margin-bottom: 0.75em;
+}
+#main-wrapper main p {
+  line-height: 1.5em;
+}

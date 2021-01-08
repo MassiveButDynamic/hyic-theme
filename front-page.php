@@ -17,13 +17,13 @@ get_header();
                 </div>
         </div>
 </div>
-<div id='main-wrapper'>      
+<div id='main-wrapper' class='front-page'>      
         <main>
                 <?php 
                 if ( have_posts() ) {
                         while ( have_posts() ) {
-                        the_post();
-                        the_content();
+                                the_post();
+                                the_content();
                         } // end while
                 } // end if
                 ?>

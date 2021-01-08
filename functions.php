@@ -23,9 +23,11 @@
     add_theme_support('post-thumbnails');
 
     wp_enqueue_style('theme', get_template_directory_uri().'/css/theme.css');
+    wp_enqueue_style('page', get_template_directory_uri().'/css/page.css');
     wp_enqueue_style('front-page', get_template_directory_uri().'/css/front-page.css');
     wp_enqueue_style('hyic-event-carousel', get_template_directory_uri().'/css/hyic-event-carousel.css');
     wp_enqueue_style('menu', get_template_directory_uri().'/css/menu.css');
+    wp_enqueue_style('news', get_template_directory_uri().'/css/news.css');
     
     wp_enqueue_script('menu', get_template_directory_uri().'/js/menu.js');
 

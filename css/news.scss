@@ -1,0 +1,168 @@
+#main-wrapper.news main {
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            display: flex;
+            margin-bottom: 3.5em;
+
+            .image-wrapper {
+                max-width: 200px;
+                margin-right: 1.5em;
+
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+
+            .text-wrapper {
+                a.title {
+                    font-size: 2.5rem;
+                    font-variation-settings: 'wght' 550;
+                    text-decoration: none;
+                    color: black;
+                }
+
+                div.date {
+                    margin-top: 0.35em;
+                    color: #565656;
+                    font-variation-settings: 'wght' 545;
+                }
+            }
+
+            a.read-more {
+                color: black;
+                text-decoration: none;
+                background-color: var(--primary);
+                padding: 10px 30px;
+            }
+
+            a.read-more-mobile-button {
+                display: none;
+                color: black;
+                text-decoration: none;
+                background-color: var(--primary);
+                padding: 15px 30px;
+            }
+        }
+    }
+}
+
+#main-wrapper.front-page main ul {
+    padding: 0;
+
+    li {
+        display: grid;
+        margin-bottom: 3.5em;
+        grid-template-columns: 150px 25px auto;
+        grid-template-areas:
+            "img spacer text1"
+            "img spacer text2"
+            "img spacer text3";
+
+        div.wp-block-latest-posts__featured-image {
+            grid-area: img;
+        }
+
+        a {
+            grid-area: text1;
+            font-size: 2rem;
+            font-variation-settings: 'wght' 550;
+            text-decoration: none;
+            color: black;
+        }
+
+        time {
+            grid-area: text2;
+            font-size: 1em;
+            color: #565656;
+            font-variation-settings: 'wght' 545;
+        }
+
+        div.wp-block-latest-posts__post-excerpt {
+            grid-area: text3;
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    #main-wrapper.news main {
+        h1 {
+            margin-top: 0.67em;
+        }
+
+        ul li {
+            flex-direction: column;
+
+            .image-wrapper {
+                max-width: 100%;
+                max-height: 40vh;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                margin-right: 0;
+                margin-bottom: 1em;
+            }
+
+            .text-wrapper {
+                a.read-more {
+                    display: none;
+                }
+
+                a.read-more-mobile-button {
+                    display: block;
+
+                    div {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    #main-wrapper.front-page main ul {
+        padding: 0;
+
+        li {
+            grid-template-columns: auto;
+            grid-template-rows: auto 20px auto auto auto;
+            grid-template-areas:
+                "img"
+                "spacer"
+                "text1"
+                "text2"
+                "text3";
+
+            div.wp-block-latest-posts__featured-image {
+                grid-area: img;
+                margin-right: 0;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            // a {
+            //     grid-area: text1;
+            //     font-size: 2rem;
+            //     font-variation-settings: 'wght' 550;
+            //     text-decoration: none;
+            //     color: black;
+            // }
+
+            // time {
+            //     grid-area: text2;
+            //     font-size: 1em;
+            //     color: #565656;
+            //     font-variation-settings: 'wght' 545;
+            // }
+
+            // div.wp-block-latest-posts__post-excerpt {
+            //     grid-area: text3;
+            // }
+        }
+    }
+}

@@ -1,3 +1,20 @@
+.wp-block-latest-posts + .wp-block-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+div.hyic-button a,
+div.hyic-button a:hover,
+div.hyic-button a:visited {
+  border: 1px solid #5d5c5c;
+  color: #5d5c5c;
+  background-color: white;
+  padding: 0.5em 2.5em;
+  border-radius: 5em;
+  text-align: center;
+  text-decoration: none;
+}
+
 #top-section {
   display: flex;
   position: relative;
@@ -58,34 +75,16 @@
   text-decoration: underline;
 }
 
-#main-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#main-wrapper main {
-  width: 1000px;
-  max-width: calc(100% - 40px);
-}
-#main-wrapper main h2 {
-  font-size: 3.25rem;
-  font-weight: 500;
-  margin-top: 2em;
-  margin-bottom: 0.75em;
-}
-#main-wrapper main p {
-  line-height: 1.5em;
-}
-#main-wrapper main .podcast div.wp-block-media-text__content {
+#main-wrapper.front-page main .podcast div.wp-block-media-text__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
-#main-wrapper main .podcast div.wp-block-media-text__content p {
+#main-wrapper.front-page main .podcast div.wp-block-media-text__content p {
   margin-top: 0;
 }
-#main-wrapper main .podcast div.wp-block-media-text__content figure {
+#main-wrapper.front-page main .podcast div.wp-block-media-text__content figure {
   margin: 0;
 }
 

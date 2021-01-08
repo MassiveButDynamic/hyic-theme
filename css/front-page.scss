@@ -1,3 +1,20 @@
+.wp-block-latest-posts + .wp-block-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+div.hyic-button a,
+div.hyic-button a:hover,
+div.hyic-button a:visited {
+    border: 1px solid #5d5c5c;
+    color: #5d5c5c;
+    background-color: white;
+    padding: 0.5em 2.5em;
+    border-radius: 5em;
+    text-align: center;
+    text-decoration: none;
+}
+
 #top-section {
     display: flex;
     position: relative;

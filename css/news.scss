@@ -122,4 +122,47 @@
             }
         }
     }
+
+    #main-wrapper.front-page main ul {
+        padding: 0;
+
+        li {
+            grid-template-columns: auto;
+            grid-template-rows: auto 20px auto auto auto;
+            grid-template-areas:
+                "img"
+                "spacer"
+                "text1"
+                "text2"
+                "text3";
+
+            div.wp-block-latest-posts__featured-image {
+                grid-area: img;
+                margin-right: 0;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            // a {
+            //     grid-area: text1;
+            //     font-size: 2rem;
+            //     font-variation-settings: 'wght' 550;
+            //     text-decoration: none;
+            //     color: black;
+            // }
+
+            // time {
+            //     grid-area: text2;
+            //     font-size: 1em;
+            //     color: #565656;
+            //     font-variation-settings: 'wght' 545;
+            // }
+
+            // div.wp-block-latest-posts__post-excerpt {
+            //     grid-area: text3;
+            // }
+        }
+    }
 }

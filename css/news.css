@@ -94,4 +94,20 @@
     width: 100%;
     text-align: center;
   }
+
+  #main-wrapper.front-page main ul {
+    padding: 0;
+  }
+  #main-wrapper.front-page main ul li {
+    grid-template-columns: auto;
+    grid-template-rows: auto 20px auto auto auto;
+    grid-template-areas: "img" "spacer" "text1" "text2" "text3";
+  }
+  #main-wrapper.front-page main ul li div.wp-block-latest-posts__featured-image {
+    grid-area: img;
+    margin-right: 0;
+  }
+  #main-wrapper.front-page main ul li div.wp-block-latest-posts__featured-image img {
+    width: 100%;
+  }
 }

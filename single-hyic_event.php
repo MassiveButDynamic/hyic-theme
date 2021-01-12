@@ -4,6 +4,9 @@ get_header();
 if ( have_posts() ) : 
     while ( have_posts() ) : the_post(); 
 ?>
+<div class='single-post-thumbnail-header'>
+    <?php the_post_thumbnail('original'); ?>
+</div>
 <div id='main-wrapper'>
     <main>
         <h1><?php the_title();?></h1>

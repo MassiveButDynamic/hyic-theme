@@ -66,7 +66,7 @@ $today = new DateTime('today');
                                         if(!$isAllDay) echo 'bis '.$eventEndTime.' Uhr';
                                     ?>
                                 </span>
-                            <span class='hyic-event-card-deadline'>Anmeldung bis: <?php echo $registrationDeadline->format('d.m.')?></span>
+                            <span class='hyic-event-card-deadline'><span>Anmeldung bis:</span><br><span class='date'><?php echo $registrationDeadline->format('d.m.')?></span></span>
                         </div>
                         <?php
                         if($registrationDeadline<$today):
@@ -132,7 +132,7 @@ $today = new DateTime('today');
                                     if(!$isAllDay) echo 'bis '.$eventEndTime.' Uhr';
                                 ?>
                             </span>
-                        <span class='hyic-event-card-deadline'>Anmeldung bis: <?php echo $registrationDeadline->format('d.m.')?></span>
+                        <span class='hyic-event-card-deadline'><?php the_excerpt();?></span>
                     </div>
                     <a class='hyic-event-card-button more-info' href='<?php the_permalink();?>'>
                         <span>Mehr erfahren</span>

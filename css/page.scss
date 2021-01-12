@@ -1,6 +1,7 @@
 .single-post-thumbnail-header {
     width: 100%;
     max-height: 33vh;
+    min-height: 100px;
     display: flex;
     overflow: hidden;
     align-items: center;
@@ -10,7 +11,7 @@
         min-width: 100%;
         min-height: 100%;
         width: auto;
-        height: fit-content;
+        height: auto;
         z-index: -1;
     }
 }

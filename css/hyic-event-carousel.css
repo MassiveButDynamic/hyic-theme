@@ -66,6 +66,9 @@
   color: white;
   text-decoration: none;
 }
+.hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-button.more-info {
+  background: gray;
+}
 .hyic-event-carousel-wrapper .hyic-event-card:hover {
   box-shadow: 0 0 20px 0 #00000045;
 }

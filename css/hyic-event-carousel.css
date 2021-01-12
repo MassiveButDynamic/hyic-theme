@@ -25,7 +25,7 @@
   width: 100%;
 }
 .hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-text-wrapper {
-  width: calc(100% - 20px);
+  width: calc(100% - 30px);
   height: 35%;
   padding: 15px;
   display: flex;
@@ -66,6 +66,9 @@
   color: white;
   text-decoration: none;
 }
+.hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-button.more-info {
+  background: gray;
+}
 .hyic-event-carousel-wrapper .hyic-event-card:hover {
   box-shadow: 0 0 20px 0 #00000045;
 }
@@ -102,9 +105,11 @@
     flex-direction: column;
   }
   .hyic-event-carousel-wrapper .hyic-event-card {
-    width: calc(100% - 20px);
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .hyic-event-carousel-wrapper .show-all-hyic-events {
     padding: 5em 0;

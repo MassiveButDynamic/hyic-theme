@@ -1,6 +1,7 @@
 .single-post-thumbnail-header {
   width: 100%;
   max-height: 33vh;
+  min-height: 100px;
   display: flex;
   overflow: hidden;
   align-items: center;
@@ -10,7 +11,7 @@
   min-width: 100%;
   min-height: 100%;
   width: auto;
-  height: fit-content;
+  height: auto;
   z-index: -1;
 }
 
@@ -41,6 +42,22 @@
   color: #565656;
   font-variation-settings: "wght" 545;
   margin-bottom: 0.5em;
+}
+
+a.hyic-primary-button,
+a.hyic-primary-button:visited {
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  width: fit-content;
+  padding: 10px 20px;
+}
+
+a.hyic-primary-button:hover {
+  background: #1ac181;
 }
 
 @media screen and (max-width: 730px) {

@@ -75,6 +75,9 @@ div.hyic-button a:visited {
   text-decoration: underline;
 }
 
+#main-wrapper.front-page main .podcast figure img {
+  height: unset !important;
+}
 #main-wrapper.front-page main .podcast div.wp-block-media-text__content {
   display: flex;
   flex-direction: column;

@@ -15,6 +15,7 @@
         <div id='mobilenav-wrapper'>
             <?php wp_nav_menu(array('menu'=>'top')) ?>
         </div>
+        <div>
         <?php if(!is_front_page()){?>
             <div class='navbar-spacer'></div>
         <?php }?>

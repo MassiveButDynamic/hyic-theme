@@ -86,6 +86,10 @@ div.hyic-button a:visited {
 
 #main-wrapper.front-page main {
     .podcast {
+        figure img {
+            height: unset !important;
+        }
+
         div.wp-block-media-text__content {
             display: flex;
             flex-direction: column;

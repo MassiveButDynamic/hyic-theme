@@ -88,6 +88,11 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 1000px) {
+  .hyic-event-carousel-wrapper .show-all-hyic-events {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 730px) {
   .hyic-event-carousel-wrapper {
     flex-wrap: wrap;

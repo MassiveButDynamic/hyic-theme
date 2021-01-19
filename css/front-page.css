@@ -20,7 +20,7 @@ div.hyic-button a:visited {
   position: relative;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(45deg, var(--primary), #78edad);
+  background: linear-gradient(45deg, var(--primary), #8ff0ba);
 }
 #top-section .background {
   position: absolute;

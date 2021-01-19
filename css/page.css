@@ -60,7 +60,7 @@ a.hyic-primary-button:hover {
   background: #1ac181;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 1000px) {
   #main-wrapper main h1 {
     margin-top: 0.5em;
   }

@@ -63,7 +63,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 .hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-button.more-info {

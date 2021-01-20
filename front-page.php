@@ -9,7 +9,7 @@ get_header();
         </div>
         <div class='text'>
                 <div class='top'>
-                        <img src='./wp-content/themes/hyic-theme/assets/HB_YIC_Logo_Komplett_SW.png'>
+                        <img src='./wp-content/themes/hyic-theme/assets/HB_YIC_Logo_Komplett_SW.png' alt='Logo des HYIC'>
                         <h1><?php bloginfo('description'); ?></h1>
                 </div>
                 <div class='bottom'>

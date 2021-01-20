@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Manrope';
     src: url('../assets/fonts/Manrope[wght].ttf') format("truetype-variations");
+    font-display: fallback;
 }
 
 :root {

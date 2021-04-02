@@ -83,7 +83,6 @@ div.hyic-button a:visited {
 #main-wrapper.front-page main .podcast div.wp-block-media-text__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
 }
 #main-wrapper.front-page main .podcast div.wp-block-media-text__content p {

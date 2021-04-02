@@ -21,6 +21,7 @@ div.hyic-button a:visited {
   height: 100vh;
   width: 100%;
   background: linear-gradient(45deg, var(--primary), #8ff0ba);
+  hyphens: none;
 }
 #top-section .background {
   position: absolute;

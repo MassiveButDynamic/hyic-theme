@@ -43,6 +43,7 @@
 }
 .hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-text-wrapper .hyic-event-card-deadline {
   margin-top: 0.35em;
+  overflow: hidden;
 }
 .hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-text-wrapper .hyic-event-card-deadline span:not(.date) {
   font-size: 0.9em;
@@ -53,6 +54,12 @@
   font-size: 0.95em;
   font-weight: 600;
   color: #5d5c5c;
+}
+.hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-text-wrapper .hyic-event-card-deadline span.excerpt {
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .hyic-event-carousel-wrapper .hyic-event-card .hyic-event-card-button {
   width: 100%;

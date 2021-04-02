@@ -47,6 +47,7 @@
 
             .hyic-event-card-deadline {
                 margin-top: 0.35em;
+                overflow: hidden;
 
                 span:not(.date) {
                     font-size: 0.9em;
@@ -58,6 +59,13 @@
                     font-size: 0.95em;
                     font-weight: 600;
                     color: #5d5c5c;
+                }
+
+                span.excerpt {
+                    -webkit-line-clamp: 3;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
                 }
             }
         }

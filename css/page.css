@@ -24,6 +24,14 @@
   width: 1000px;
   max-width: calc(100% - 40px);
 }
+#main-wrapper main h1,
+#main-wrapper main h2,
+#main-wrapper main h3,
+#main-wrapper main h4,
+#main-wrapper main h5,
+#main-wrapper main h6 {
+  overflow-wrap: break-word;
+}
 #main-wrapper main h1 {
   font-size: 3.25rem;
   font-weight: 500;

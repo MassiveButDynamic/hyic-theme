@@ -6,6 +6,7 @@
 
 :root {
     --primary: #36e3a1;
+    // --menu-bar-height: 2em;
 }
 
 body {
@@ -15,4 +16,5 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    overflow-wrap: break-word;
 }

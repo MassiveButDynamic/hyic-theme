@@ -25,6 +25,15 @@
         width: 1000px;
         max-width: calc(100% - 40px);
 
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            overflow-wrap: break-word;
+        }
+
         h1 {
             font-size: 3.25rem;
             font-weight: 500;

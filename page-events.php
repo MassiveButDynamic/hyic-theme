@@ -132,7 +132,7 @@ $today = new DateTime('today');
                                     if(!$isAllDay) echo 'bis '.$eventEndTime.' Uhr';
                                 ?>
                             </span>
-                        <span class='hyic-event-card-deadline'><?php the_excerpt();?></span>
+                        <span class='hyic-event-card-deadline'><span class='excerpt'><?php the_excerpt();?></span></span>
                     </div>
                     <a class='hyic-event-card-button more-info' href='<?php the_permalink();?>'>
                         <span>Mehr erfahren</span>

@@ -101,13 +101,14 @@ div.hyic-button a:visited {
             flex-direction: column;
             height: 100%;
 
-            p {
-                margin-top: 0;
-            }
-
             figure {
                 margin: 0;
             }
+        }
+
+        .wp-block-media-text__content *:first-child {
+            margin-top: 0;
+            padding-top: 0;
         }
     }
 }

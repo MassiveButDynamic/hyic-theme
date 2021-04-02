@@ -87,11 +87,12 @@ div.hyic-button a:visited {
   flex-direction: column;
   height: 100%;
 }
-#main-wrapper.front-page main .podcast div.wp-block-media-text__content p {
-  margin-top: 0;
-}
 #main-wrapper.front-page main .podcast div.wp-block-media-text__content figure {
   margin: 0;
+}
+#main-wrapper.front-page main .podcast .wp-block-media-text__content *:first-child {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 @media screen and (max-width: 1000px) {

@@ -83,3 +83,45 @@ a.hyic-primary-button:hover {
         margin-top: 0.5em;
     }
 }
+
+@media screen and (max-width: 730px) {
+    #main-wrapper main {
+        //--fluid-em: calc(29.6px + (48.8 - 29.6) * ((100vw - 330px) / (730 - 330)));
+        --fluid-em: calc(11.7px + (16 - 11.7) * ((100vw - 330px) / (730 - 330)));
+
+        h1 {
+            font-size: calc(3.05 * var(--fluid-em));
+        }
+
+        h2 {
+            font-size: calc(1.5 * var(--fluid-em));
+        }
+
+        h3 {
+            font-size: calc(1.17 * var(--fluid-em));
+        }
+
+        h4 {
+            font-size: calc(1.12 * var(--fluid-em));
+        }
+
+        h5 {
+            font-size: calc(0.83 * var(--fluid-em));
+        }
+
+        h6 {
+            font-size: calc(0.75 * var(--fluid-em));
+        }
+    }
+
+    #main-wrapper.news main ul li a.title,
+    #main-wrapper.front-page main ul.wp-block-latest-posts li a {
+        font-size: calc(22.4px + (32 - 2.4) * ((100vw - 330px) / (730 - 330))) !important;
+    }
+}
+
+// @media screen and (max-width: 530px) {
+//     #main-wrapper main h1 {
+//         font-size: 2.75rem;
+//     }
+// }

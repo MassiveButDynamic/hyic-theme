@@ -51,6 +51,8 @@ div.hyic-button a:visited {
   font-size: 6rem;
   font-weight: 300;
   margin-top: 0;
+  max-width: 1px;
+  overflow-wrap: normal;
 }
 #top-section .text .bottom {
   display: flex;

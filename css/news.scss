@@ -50,7 +50,7 @@
     }
 }
 
-#main-wrapper.front-page main ul {
+#main-wrapper.front-page main ul:not(.blocks-gallery-grid) {
     padding: 0;
 
     li {

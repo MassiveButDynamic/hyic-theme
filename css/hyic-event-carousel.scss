@@ -12,16 +12,17 @@
         margin-bottom: 5px;
         margin-left: 10px;
         margin-right: 10px;
-        height: 26.5em;
+        height: 28.5em;
         width: calc(100% / var(--events-per-row) - 20px);
         box-shadow: 0 0 20px 0 #00000024;
         transition: box-shadow 0.2s;
 
         --image-height: 42%;
-        --button-height: 15%;
+        --button-height: 13.5%;
 
         .hyic-event-card-image-wrapper {
             height: var(--image-height);
+            min-height: var(--image-height);
             overflow: hidden;
             display: flex;
             align-items: center;
@@ -44,6 +45,10 @@
             .hyic-event-card-title {
                 font-weight: bold;
                 font-size: 1.25em;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
             }
 
             .hyic-event-card-time {
@@ -74,6 +79,10 @@
                     display: -webkit-box;
                     -webkit-box-orient: vertical;
                     overflow: hidden;
+
+                    p {
+                        margin: 0;
+                    }
                 }
             }
         }
@@ -116,10 +125,6 @@
             text-decoration: none;
         }
     }
-}
-
-@media screen and (max-width: 1000px) {
-
 }
 
 @media screen and (max-width: 930px) {

@@ -34,24 +34,6 @@ $today = new DateTime('today');
                         if($eventEndDate<$today) {continue;}
 
                         ?>
-                        <!-- <a class='event' href='<?php the_permalink();?>'>
-                            <div class='image'><?php //the_post_thumbnail(); ?></div>
-                            <div class='text'>
-                                <h3><?php the_title(); ?></h3>
-                                <div class='description'><?php the_excerpt(); ?></div>
-                                <p><?php 
-                                    echo $eventStartDate->format('d.m.').' ';
-                                    if(!$isAllDay) echo $eventStartTime.' Uhr ';
-                                    if($eventStartDate!=$eventEndDate) echo 'bis '.$eventEndDate->format('d.m.Y').' ';
-                                    if(!$isAllDay) echo 'bis '.$eventEndTime.' Uhr';
-                                ?></p>
-                            <?php if($registrationDeadline<$today){?>
-                                <p>Anmeldephase vorbei.</p>
-                            <?php } else {?>
-                                <p>Bis zum <?php echo $registrationDeadline->format('d.m.')?> anmelden!</p>
-                            <?php } ?>
-                            </div>
-                        </a> -->
                         <div class='hyic-event-card'>
                         <div class='hyic-event-card-image-wrapper'>
                             <img src='<?php echo wp_get_attachment_image_url( get_post_thumbnail_id( get_the_ID() ), 'post-thumbnail' ); ?>'></img>
@@ -60,8 +42,11 @@ $today = new DateTime('today');
                             <span class='hyic-event-card-title'><?php the_title(); ?></span>
                             <span class='hyic-event-card-time'>
                                 <?php 
+                                        if(!isset($eventStartTime) || !isset($eventEndTime) || $eventStartTime=='' || $eventEndTime=='') $isAllDay=true;
+
                                         echo $eventStartDate->format('d.m.').' ';
-                                        if(!$isAllDay) echo $eventStartTime.' Uhr ';
+                                        if(!$isAllDay) echo $eventStartTime.' ';
+                                        if(!$isAllDay && $eventStartDate!=$eventEndDate) echo 'Uhr ';
                                         if($eventStartDate!=$eventEndDate) echo 'bis '.$eventEndDate->format('d.m.Y').' ';
                                         if(!$isAllDay) echo 'bis '.$eventEndTime.' Uhr';
                                     ?>
@@ -103,21 +88,6 @@ $today = new DateTime('today');
                 if($eventEndDate>=$today) {continue;}
 
                 ?>
-                <!-- <a class='event' href='<?php the_permalink();?>'>
-                    <div class='image'><?php //the_post_thumbnail(); ?></div>
-                    <div class='text'>
-                        <h3><?php the_title(); ?></h3>
-                        <div class='description'><?php the_excerpt(); ?></div>
-                        <p><?php 
-                            
-
-                            echo $eventStartDate->format('d.m.').' ';
-                            if(!$isAllDay) echo $eventStartTime.' Uhr ';
-                            if($eventStartDate!=$eventEndDate) echo 'bis '.$eventEndDate->format('d.m.Y').' ';
-                            if(!$isAllDay) echo 'bis '.$eventEndTime.' Uhr';
-                        ?></p>
-                    </div>
-                </a> -->
                 <div class='hyic-event-card'>
                     <div class='hyic-event-card-image-wrapper'>
                         <img src='<?php echo wp_get_attachment_image_url( get_post_thumbnail_id( get_the_ID() ), 'post-thumbnail' ); ?>'></img>
@@ -126,8 +96,11 @@ $today = new DateTime('today');
                         <span class='hyic-event-card-title'><?php the_title(); ?></span>
                         <span class='hyic-event-card-time'>
                             <?php 
+                                    if(!isset($eventStartTime) || !isset($eventEndTime) || $eventStartTime=='' || $eventEndTime=='') $isAllDay=true;
+
                                     echo $eventStartDate->format('d.m.').' ';
-                                    if(!$isAllDay) echo $eventStartTime.' Uhr ';
+                                    if(!$isAllDay) echo $eventStartTime.' ';
+                                    if(!$isAllDay && $eventStartDate!=$eventEndDate) echo 'Uhr ';
                                     if($eventStartDate!=$eventEndDate) echo 'bis '.$eventEndDate->format('d.m.Y').' ';
                                     if(!$isAllDay) echo 'bis '.$eventEndTime.' Uhr';
                                 ?>

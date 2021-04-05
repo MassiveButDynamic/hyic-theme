@@ -15,7 +15,7 @@ if ( have_posts() ) :
             <br>
             <p>
             <b>Hier noch einmal kurz und knapp:</b></br>
-            Das Event findet
+            Das Event 
             <?php 
                 $isAllDay = get_post_custom_values('_hyic_event_all_day', get_the_ID())[0]=='true';
                 $eventStartDate = new DateTime(get_post_custom_values('_hyic_event_start_date', get_the_ID())[0]);
@@ -27,20 +27,26 @@ if ( have_posts() ) :
 
                 $today = new DateTime('today');
 
+                if($eventEndDate<$today) echo ' fand ';
+                else echo ' findet ';
+
                 if($eventStartDate==$eventEndDate) echo 'am ';
                 else echo 'vom ';
 
                 echo $eventStartDate->format('d.m.').' ';
 
-                if($eventStartDate==$eventEndDate) echo ' von ';
-                if(!$isAllDay) echo $eventStartTime.' Uhr ';
+                if(!isset($eventStartTime) || !isset($eventEndTime) || $eventStartTime=='' || $eventEndTime=='') $isAllDay=true;
+
+                if($eventStartDate==$eventEndDate && !$isAllDay) echo ' von ';
+                if(!$isAllDay) echo $eventStartTime.' ';
+                if(!$isAllDay && $eventStartDate!=$eventEndDate) echo 'Uhr ';
                 if($eventStartDate!=$eventEndDate) echo 'bis zum '.$eventEndDate->format('d.m.Y').' ';
                 if(!$isAllDay) echo 'bis '.$eventEndTime.' Uhr';
             ?>
             statt.</br>
-            <?php if($registrationDeadline<$today){ ?>
+            <?php if($registrationDeadline<$today && $eventEndDate>=$today){ ?>
                 Die Anmeldephase ist bereits vorbei.
-            <?php } else { ?>
+            <?php } else if($eventEndDate>=$today) { ?>
             Anmelden kannst du dich bis zum <?php echo $registrationDeadline->format('d.m.') ?><br><br>
             <a class='hyic-primary-button' target='_blank' href='<?php echo $registrationLink ?>'>Zur Anmeldung</a>
             <?php } ?>

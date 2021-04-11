@@ -56,6 +56,42 @@ if ( have_posts() ) :
     </main>
 </div>
 <?php
+    $title = get_the_title();
+    $excerpt = get_the_excerpt();
+    $thumbnail = get_the_post_thumbnail_url();
+    $startDate = (new DateTime($eventStartDate->format('d.m.Y').' '.$eventStartTime))->format('c');
+    $endDate = (new DateTime($eventEndDate->format('d.m.Y').' '.$eventEndTime))->format('c');
+
+    echo("
+    <script type=\"application/ld+json\">
+    {
+        \"@context\": \"https://schema.org\",
+        \"@type\": \"Event\",
+        \"name\": \"$title\",
+        \"startDate\": \"$startDate\",
+        \"endDate\": \"$endDate\",
+        \"eventAttendanceMode\": \"https://schema.org/OfflineEventAttendanceMode\",
+        \"eventStatus\": \"https://schema.org/EventScheduled\",
+        \"location\": {
+          \"@type\": \"Place\",
+          \"name\": \"Hammerbrooklyn.DigitalCampus\",
+          \"address\": {
+            \"@type\": \"PostalAddress\",
+            \"streetAddress\": \"Stadtdeich 2-4\",
+            \"addressLocality\": \"Hamburg\",
+            \"postalCode\": \"20097\",
+            \"addressRegion\": \"DE\",
+            \"addressCountry\": \"DE\"
+          }
+        },
+        \"image\": [
+          \"$thumbnail\"
+         ],
+        \"description\": \"$excerpt\"
+    }
+    </script>");
+?>
+<?php
     endwhile; 
 endif; 
 

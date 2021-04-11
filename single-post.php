@@ -17,4 +17,22 @@ the_post();
         <?php the_content(); ?>
     </main>
 </div>
+<?php
+    $title = get_the_title();
+    $thumbnail = get_the_post_thumbnail_url();
+    $dateModified = get_the_modified_date('c');
+    $datePublished = get_the_date('c');
+
+    echo("
+    <script type='application/ld+json'>
+        {
+            \"@context\": \"https://schema.org\", 
+            \"@type\": \"NewsArticle\", 
+            \"headline\": \"$title\", 
+            \"image\": [ \"$thumbnail\"],
+            \"datePublished\": \"$datePublished\",
+            \"dateModified\": \"$dateModified\"
+        }
+    </script>");
+?>
 <?php get_footer(); ?>

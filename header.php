@@ -5,9 +5,6 @@
         <meta name='description' content='<?php bloginfo('description') ?>'>
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width'>
-        <?php
-            if(is_front_page() && get_theme_mod('og_image_link')) echo '<meta name="og:image" content="'.get_theme_mod('og_image_link').'">';
-        ?>
         <?php wp_head() ?>
     </head>
     <body>

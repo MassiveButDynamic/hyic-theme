@@ -8,7 +8,7 @@
         <?php wp_head() ?>
     </head>
     <body>
-        <nav class='<?php if(is_front_page()) { echo('show-on-scroll'); }?>'>
+        <nav class='top-nav <?php if(is_front_page()) { echo('show-on-scroll'); }?>'>
             <a href='<?php echo get_home_url(); ?>'><img class='logo' src='<?php echo esc_url(get_theme_mod('menu_logo'));?>' alt='Das Logo des HYIC'></a>
             <?php wp_nav_menu(array('menu'=>'top')) ?>
             <div class='hamburger' onclick='toggleMobileNav()'><img src='<?php echo get_template_directory_uri(); ?>/assets/menu-24px.svg' alt='Hamburger-Menü'></div>

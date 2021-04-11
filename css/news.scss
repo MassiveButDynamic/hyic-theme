@@ -48,6 +48,25 @@
             }
         }
     }
+
+    nav.pagination {
+        .nav-links {
+            display: flex;
+            padding: 0 15px;
+
+            .prev {
+                margin-right: auto;
+            }
+
+            .next {
+                margin-left: auto;
+            }
+
+            .page-numbers:not(.prev):not(.next) {
+                margin: 0 10px;
+            }
+        }
+    }
 }
 
 #main-wrapper.front-page main ul:not(.blocks-gallery-grid) {

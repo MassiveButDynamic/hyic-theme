@@ -1,4 +1,4 @@
-nav:not(.footer-nav) {
+nav.top-nav {
   position: fixed;
   width: 100%;
   height: 4.35em;
@@ -9,42 +9,42 @@ nav:not(.footer-nav) {
   box-shadow: 0 0 10px 0 #00000026;
   z-index: 100;
 }
-nav:not(.footer-nav) img.logo {
+nav.top-nav img.logo {
   height: 2.85em;
   margin-left: 2em;
 }
-nav:not(.footer-nav) div.menu,
-nav:not(.footer-nav) div.menu-top-container {
+nav.top-nav div.menu,
+nav.top-nav div.menu-top-container {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
 }
-nav:not(.footer-nav) div.menu ul,
-nav:not(.footer-nav) div.menu-top-container ul {
+nav.top-nav div.menu ul,
+nav.top-nav div.menu-top-container ul {
   display: flex;
   list-style-type: none;
   margin: 0;
   padding-left: 2em;
 }
-nav:not(.footer-nav) div.menu ul li,
-nav:not(.footer-nav) div.menu-top-container ul li {
+nav.top-nav div.menu ul li,
+nav.top-nav div.menu-top-container ul li {
   margin: 0 5px;
 }
-nav:not(.footer-nav) div.menu ul li a,
-nav:not(.footer-nav) div.menu-top-container ul li a {
+nav.top-nav div.menu ul li a,
+nav.top-nav div.menu-top-container ul li a {
   text-decoration: none;
   color: black;
 }
-nav:not(.footer-nav) div.menu ul li.current_page_item a,
-nav:not(.footer-nav) div.menu-top-container ul li.current_page_item a {
+nav.top-nav div.menu ul li.current_page_item a,
+nav.top-nav div.menu-top-container ul li.current_page_item a {
   font-weight: bold;
 }
-nav:not(.footer-nav) .hamburger {
+nav.top-nav .hamburger {
   display: none;
   margin-right: 1.5em;
 }
-nav:not(.footer-nav) .hamburger img {
+nav.top-nav .hamburger img {
   height: 1.85em;
 }
 
@@ -95,14 +95,14 @@ nav.show-on-scroll.visible {
 }
 
 @media screen and (max-width: 730px) {
-  nav:not(.footer-nav) {
+  nav.top-nav {
     justify-content: space-between;
   }
-  nav:not(.footer-nav) div.menu,
-nav:not(.footer-nav) div.menu-top-container {
+  nav.top-nav div.menu,
+nav.top-nav div.menu-top-container {
     display: none;
   }
-  nav:not(.footer-nav) .hamburger {
+  nav.top-nav .hamburger {
     display: unset;
     cursor: pointer;
   }

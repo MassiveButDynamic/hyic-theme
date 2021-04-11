@@ -81,6 +81,9 @@ div.hyic-button a:visited {
   text-decoration: underline;
 }
 
+#main-wrapper.front-page main ul.blocks-gallery-grid li.blocks-gallery-item {
+  margin: 0 1em 2.5em 0;
+}
 #main-wrapper.front-page main .podcast figure {
   margin-bottom: 1.5em;
 }

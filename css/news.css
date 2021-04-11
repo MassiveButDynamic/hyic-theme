@@ -85,10 +85,10 @@
   #main-wrapper.news main h1 {
     margin-top: 0.67em;
   }
-  #main-wrapper.news main ul li {
+  #main-wrapper.news main ul:not(.blocks-gallery-grid) li {
     flex-direction: column;
   }
-  #main-wrapper.news main ul li .image-wrapper {
+  #main-wrapper.news main ul:not(.blocks-gallery-grid) li .image-wrapper {
     max-width: 100%;
     max-height: 40vh;
     overflow: hidden;
@@ -97,30 +97,30 @@
     margin-right: 0;
     margin-bottom: 1em;
   }
-  #main-wrapper.news main ul li .text-wrapper a.read-more {
+  #main-wrapper.news main ul:not(.blocks-gallery-grid) li .text-wrapper a.read-more {
     display: none;
   }
-  #main-wrapper.news main ul li .text-wrapper a.read-more-mobile-button {
+  #main-wrapper.news main ul:not(.blocks-gallery-grid) li .text-wrapper a.read-more-mobile-button {
     display: block;
   }
-  #main-wrapper.news main ul li .text-wrapper a.read-more-mobile-button div {
+  #main-wrapper.news main ul:not(.blocks-gallery-grid) li .text-wrapper a.read-more-mobile-button div {
     width: 100%;
     text-align: center;
   }
 
-  #main-wrapper.front-page main ul {
+  #main-wrapper.front-page main ul:not(.blocks-gallery-grid) {
     padding: 0;
   }
-  #main-wrapper.front-page main ul li {
+  #main-wrapper.front-page main ul:not(.blocks-gallery-grid) li {
     grid-template-columns: auto;
     grid-template-rows: auto 20px auto auto auto;
     grid-template-areas: "img" "spacer" "text1" "text2" "text3";
   }
-  #main-wrapper.front-page main ul li div.wp-block-latest-posts__featured-image {
+  #main-wrapper.front-page main ul:not(.blocks-gallery-grid) li div.wp-block-latest-posts__featured-image {
     grid-area: img;
     margin-right: 0;
   }
-  #main-wrapper.front-page main ul li div.wp-block-latest-posts__featured-image img {
+  #main-wrapper.front-page main ul:not(.blocks-gallery-grid) li div.wp-block-latest-posts__featured-image img {
     width: 100%;
   }
 }

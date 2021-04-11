@@ -112,7 +112,7 @@
             margin-top: 0.67em;
         }
 
-        ul li {
+        ul:not(.blocks-gallery-grid) li {
             flex-direction: column;
 
             .image-wrapper {
@@ -142,7 +142,7 @@
         }
     }
 
-    #main-wrapper.front-page main ul {
+    #main-wrapper.front-page main ul:not(.blocks-gallery-grid) {
         padding: 0;
 
         li {

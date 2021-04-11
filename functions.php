@@ -33,6 +33,7 @@
     }
     
     wp_enqueue_script('menu', get_template_directory_uri().'/js/menu.js');
+    wp_enqueue_script('full-height', get_template_directory_uri().'/js/fullHeight.js');
 
     //wp_enqueue_style('customizer', get_template_directory_uri().'/css/customizer.css');
 

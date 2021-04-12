@@ -50,16 +50,8 @@ $today = new DateTime('today');
                         <div class='hyic-event-card-text-wrapper'>
                             <span class='hyic-event-card-title'><?php the_title(); ?></span>
                             <span class='hyic-event-card-time'>
-                                <?php 
-                                        if(!isset($eventStartTime) || !isset($eventEndTime) || $eventStartTime=='' || $eventEndTime=='') $isAllDay=true;
-
-                                        echo $eventStartDate->format('d.m.').' ';
-                                        if(!$isAllDay) echo $eventStartTime.' ';
-                                        if(!$isAllDay && $eventStartDate!=$eventEndDate) echo 'Uhr ';
-                                        if($eventStartDate!=$eventEndDate) echo 'bis '.$eventEndDate->format('d.m.Y').' ';
-                                        if(!$isAllDay) echo 'bis '.$eventEndTime.' Uhr';
-                                    ?>
-                                </span>
+                                <?php echo apply_filters('hyic_assemble_event_date_string', get_the_ID(), false); ?>
+                            </span>
                             <span class='hyic-event-card-deadline'><span>Anmeldung bis:</span><br><span class='date'><?php echo $registrationDeadline->format('d.m.')?></span></span>
                         </div>
                         <?php
@@ -104,15 +96,7 @@ $today = new DateTime('today');
                     <div class='hyic-event-card-text-wrapper'>
                         <span class='hyic-event-card-title'><?php the_title(); ?></span>
                         <span class='hyic-event-card-time'>
-                            <?php 
-                                    if(!isset($eventStartTime) || !isset($eventEndTime) || $eventStartTime=='' || $eventEndTime=='') $isAllDay=true;
-
-                                    echo $eventStartDate->format('d.m.').' ';
-                                    if(!$isAllDay) echo $eventStartTime.' ';
-                                    if(!$isAllDay && $eventStartDate!=$eventEndDate) echo 'Uhr ';
-                                    if($eventStartDate!=$eventEndDate) echo 'bis '.$eventEndDate->format('d.m.Y').' ';
-                                    if(!$isAllDay) echo 'bis '.$eventEndTime.' Uhr';
-                                ?>
+                            <?php echo apply_filters('hyic_assemble_event_date_string', get_the_ID(), false); ?>
                             </span>
                         <span class='hyic-event-card-deadline'><span class='excerpt'><?php the_excerpt();?></span></span>
                     </div>

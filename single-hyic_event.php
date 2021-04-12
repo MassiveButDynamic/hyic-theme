@@ -27,21 +27,7 @@ if ( have_posts() ) :
 
                 $today = new DateTime('today');
 
-                if($eventEndDate<$today) echo ' fand ';
-                else echo ' findet ';
-
-                if($eventStartDate==$eventEndDate) echo 'am ';
-                else echo 'vom ';
-
-                echo $eventStartDate->format('d.m.').' ';
-
-                if(!isset($eventStartTime) || !isset($eventEndTime) || $eventStartTime=='' || $eventEndTime=='') $isAllDay=true;
-
-                if($eventStartDate==$eventEndDate && !$isAllDay) echo ' von ';
-                if(!$isAllDay) echo $eventStartTime.' ';
-                if(!$isAllDay && $eventStartDate!=$eventEndDate) echo 'Uhr ';
-                if($eventStartDate!=$eventEndDate) echo 'bis zum '.$eventEndDate->format('d.m.Y').' ';
-                if(!$isAllDay) echo 'bis '.$eventEndTime.' Uhr';
+                echo apply_filters('hyic_assemble_event_date_string', get_the_ID(), true);
             ?>
             statt.</br>
             <?php if($registrationDeadline<$today && $eventEndDate>=$today){ ?>

@@ -7,9 +7,18 @@ get_header();
 
 $args = array(
     'post_type'      => 'hyic_event',
-    'posts_per_page' => -1,
+    'posts_per_page' => -1
 );
 $loop = new WP_Query($args);
+
+function order_events_by_startdate($a, $b) {
+    $aStart = new DateTime(get_post_custom_values('_hyic_event_start_date', $a->ID)[0]);
+    $bStart = new DateTime(get_post_custom_values('_hyic_event_start_date', $b->ID)[0]);
+
+    return ($aStart>$bStart) ? -1 : 1;
+}
+
+usort($loop->posts, 'order_events_by_startdate');
 
 $today = new DateTime('today');
 

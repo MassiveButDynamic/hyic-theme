@@ -48,6 +48,11 @@ nav.top-nav .hamburger img {
   height: 1.85em;
 }
 
+body.is-logged-in nav.top-nav:not(.show-on-scroll),
+body.is-logged-in nav.top-nav.show-on-scroll.visible {
+  top: 32px;
+}
+
 nav.show-on-scroll {
   position: fixed;
   top: -4.35em;

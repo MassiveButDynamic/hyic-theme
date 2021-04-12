@@ -16,7 +16,7 @@
     function remove_admin_login_header() {
         remove_action('wp_head', '_admin_bar_bump_cb');
     }
-    add_action('get_header', 'remove_admin_login_header');
+    if(is_front_page()) add_action('get_header', 'remove_admin_login_header');
 
     add_action( 'after_setup_theme', 'hyic_setup' );    
     add_theme_support('customize-selective-refresh-widgets');

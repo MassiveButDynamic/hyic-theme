@@ -7,7 +7,7 @@
         <meta name='viewport' content='width=device-width'>
         <?php wp_head() ?>
     </head>
-    <body>
+    <body class='<?php if(is_user_logged_in()) echo 'is-logged-in';?>'>
         <nav class='top-nav <?php if(is_front_page()) { echo('show-on-scroll'); }?>'>
             <a href='<?php echo get_home_url(); ?>'><img class='logo' src='<?php echo esc_url(get_theme_mod('menu_logo'));?>' alt='Das Logo des HYIC'></a>
             <?php wp_nav_menu(array('menu'=>'top')) ?>
